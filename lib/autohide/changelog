@@ -1,0 +1,12 @@
+---1.11---
+hide on deactivate
+fixed dock offset calculation
+
+---1.1---
+Show on activate
+dock, undock, show, hide events
+always on top when docked
+pass in nativeWindow
+
+---1.0---
+Initial Release

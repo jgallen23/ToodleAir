@@ -1,0 +1,24 @@
+---0.23---
+fixed special characters in params
+added priority examples
+---0.20---
+new skin
+fixed logout
+removed menu and added ` to logout and toggle on top
+---0.19---
+completely re-written
+fix for cmd-q on apple
+---0.18---
+added support for status ($)
+
+---0.17---
+added support for startDate (^)
+added support for note (+)
+remember always on top
+
+---0.161---
+updated to AutoHide to 1.11
+
+---0.16---
+Updated AutoHide to 1.1
+Allow custom dates to be entered (won't throw error anymore)

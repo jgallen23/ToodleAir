@@ -1,0 +1,17 @@
+<application xmlns="http://ns.adobe.com/air/application/1.5">
+	<id>jga23.AutoHide</id>
+	<version>0.01</version>
+    <filename>Test</filename>
+	<name>AutoHide</name>
+	<description>
+	</description>
+    <initialWindow>
+        <content>Test.html</content>
+        <visible>true</visible>
+        <width>250</width>
+        <height>250</height>
+        <minimizable>false</minimizable>
+        <maximizable>false</maximizable>
+    </initialWindow>
+</application>
+

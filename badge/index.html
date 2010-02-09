@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ToodleAir Installer Demo</title>
+	
+	<style  type="text/css">
+		body {
+
+			background-color: <airTag id="backgroundColor"/>;
+
+		}
+	</style>
+	
+	<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ -->
+	<script type="text/javascript" src="swfobject.js"></script>
+	
+</head>
+<body>
+
+<!-- BEGIN EMBED CODE -->
+	
+	<!-- IMPORTANT: Make sure you also copy the swfobject script tag from the head above -->
+	
+	<div id="flashcontent" style="width:215px; height:180px;">
+		<strong>Please upgrade your Flash Player</strong>
+		This is the content that would be shown if the user does not have Flash Player 6.0.65 or higher installed.
+	</div>
+
+	<script type="text/javascript">
+		// <![CDATA[
+		// version 9.0.115 or greater is required for launching AIR apps.
+		
+			var so = new SWFObject("AIRInstallBadge.swf", "", "215", "180", "9.0.115", "#000000");
+		so.addVariable("airversion", "1.5");
+		so.addVariable("appname", "ToodleAir");
+		so.addVariable("appurl", "http://www.jga23.com/toodleair/ToodleAir-0.16.air");
+		so.addVariable("appid", "jga23.ToodleAir");
+		so.addVariable("pubid", "7DBA341C9A9D7F5A31173BF3ABCC0A006F2C93B1.1");
+		so.addVariable("appversion", "0.16");
+		so.write("flashcontent");
+		
+		// ]]>
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,82 @@
+body { margin: 0; padding: 0; font-family: Arial; font-size: 12px; }
+a { cursor: pointer; }
+
+.Wrapper { width: 400px; }
+
+.Main { }
+	.Main .outerFrame { width: 100%; height: 66px; position: relative; background: url('images/bg2.png') no-repeat left top; padding-left: 6px; }
+		.Main .outerFrame .innerFrame { background: url('images/bg2.png') repeat-x right -76px; padding-right: 6px; height: 100%;}
+			.Main .outerFrame .innerFrame .container { padding: 5px; height: 100%; } 
+
+.Body { } 
+	.Body .content { padding: 0 2px; background: #fff; border: 1px solid #454d58; width: 100%; display: none; height: 300px; overflow-y: auto; overflow-x: hidden} 
+		.Body .content .container { padding: 5px; } 
+	.Body .footerOuterFrame { width: 100%; height: 10px; background: url('images/bg2.png') no-repeat left -66px; padding-left: 6px; } 
+	.Body .footerOuterFrame .footerInnerFrame { height: 100%; background: url('images/bg2.png') no-repeat right -142px; padding-right: 6px; } 
+	
+#Loader1 { background: url('images/ajax-loader.gif') no-repeat left center; margin-top: 7px; height: 16px; width: 16px; float: right; display: none; } 
+
+div.Textbox { background: url('images/textbox.png') no-repeat left 0; padding-left: 10px; height: 21px; }
+	div.Textbox input { border: 0; height: 19px; margin: 1px 0 0 0; width: 100%; background: 0; } 
+	div.Textbox div { background: url('images/textbox.png') no-repeat right -21px; padding-right: 10px; position: relative; height: 100%; } 
+
+.Form { }
+	.Form form { margin: 0; } 
+	.Form fieldset { border: 0; padding: 0; clear: left; } 
+	.Form label { float: left; color: #fff; font-weight: bold; line-height: 22px; margin-right: 10px; width: 75px } 
+	.Form .Textbox { float: left; } 
+
+#Login1 { }
+	#Login1 fieldset { margin: 0 7px; clear: none;} 
+		#Login1 fieldset .Textbox { width: 150px; } 
+		#Login1 fieldset.password { float: right; } 
+		#Login1 fieldset.email { float: left; } 
+	
+
+#Query1 {  }
+	#Query1 .AutoComplete { width: 330px; margin-left: 10px; } 
+	#Query1 .Textbox { width: 340px;} 
+
+.AutoComplete { margin: 0; padding: 0; list-style: none; background: #fff; position: absolute; }
+	.AutoComplete li { padding: 10px; border: 1px solid #ccc; border-width: 0 1px 1px 1px; }
+		.AutoComplete li.selected { background: #ccc; } 
+
+.WindowButtons { position:absolute; right: 0px; top: -20px; width: 53px; padding: 7px 10px; height: 13px; background: url('images/button_bar.png'); }
+	.WindowButtons img { padding: 0px 0px; } 
+
+#Notification { display: none; background: #FCFEBE; border: 1px solid #F6FC5B; color: #444; font-size: 11px; font-weight: bold; width: 99%; margin: 1px 0 0 4px; }
+	#Notification .container { padding: 3px 5px; } 
+
+
+.Header { text-align: center; position: relative; height: 25px; }
+	.Header .Menu { text-align: left; position: absolute; z-index: 5; right: 2px; top: 15px; display: none; }
+	.Header .MenuButton { float: right; margin: 3px 5px 0 0 ; } 
+	.Header .Button1 { float: left; margin-right: 5px; }
+
+.Button1 { background: url('images/button1.png') no-repeat; width: 14px; height: 15px; }
+	.Button1.Minimize:hover { background-position: 0 -45px; } 
+	.Button1.Logout:hover { background-position: 0 -30px; } 
+	.Button1.Close:hover { background-position: 0 -15px; } 
+
+.MenuButton { background: url('images/menu_button.png') no-repeat; width: 20px; height: 11px;}
+
+.Menu { list-style: none; background: #f2f2f2; margin: 0; padding: 0; font-size: 11px; border: 1px solid #888 }
+	.Menu li { border: 1px solid #f2f2f2; border-width: 1px 0; } 
+		.Menu li a { color: #000; padding: 0 15px; height: 25px; line-height: 25px; display: block; text-decoration: none;  }
+	.Menu li:hover { background: #5f6770; border: 1px solid #444f5a; border-width: 1px 0; } 
+		.Menu li:hover a { color: #fff; } 
+
+.Section { display: none; float: left; width: 350px; margin: 5px 0 0 15px; }
+
+.TaskList { list-style:none; margin: 0; padding: 0; }
+	.TaskList li { height: 30px; clear: both; border-bottom: 1px solid #c4c4c4; padding: 5px 0; } 
+		.TaskList li span { display: block; } 
+			.TaskList li span.priority { font-size: 13px; font-weight: bold; } 
+			.TaskList li span.duedate { font-size: 11px; color: #878787; } 
+			.TaskList li span.folder { font-size: 11px; color: #878787; } 
+			.TaskList li span.title { font-size: 13px; font-weight: bold; } 
+		.TaskList li .col1 { float: left; } 
+		.TaskList li .col2 { float: right; text-align: right; margin-right: 10px; } 
+		.TaskList li input { float: left; margin: 5px 10px 5px 0; } 
+
+.Hint { color: #b1acaf; }

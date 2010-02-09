@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script type="text/javascript" src="AIRAliases.js"></script>
+		<script type="text/javascript" src="AIRIntrospector.js"></script>
+		<script type="text/javascript" src="jquery-1.2.6.js"></script>
+		<script type="text/javascript" src="autoHide-1.1.js"></script>
+		<script type="text/javascript">
+			var log = function(item) {
+				air.trace(item);
+				air.Introspector.Console.log(item);
+			};
+
+			window.onload = function() {
+				var autoHide = new AutoHide(window.nativeWindow, true);
+				autoHide.bind("dock", function() { log("event dock"); });
+				autoHide.bind("undock", function() { log("event undock"); });
+				autoHide.bind("show", function() { log("event show"); });
+				autoHide.bind("hide", function() { log("event hide"); });
+			};
+		</script>
+	</head>
+	<body>
+		<div style="width: 100%"></div>
+	</body>
+</html>

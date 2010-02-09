@@ -1,0 +1,81 @@
+body { margin: 0; padding: 0; font-family: Arial; font-size: 12px; }
+a { cursor: pointer; }
+
+.Wrapper { width: 350px; opacity: 0.96 }
+.Clear { clear: both; }
+
+input[type=text]:focus,
+input[type=password]:focus {
+  outline: 0 none;
+}
+
+
+/* LAYOUT */
+
+.Header { background: url('images/header.png') no-repeat; padding-left: 16px; height: 22px; }
+	.Header .headerContainer { background: url('images/header.png') no-repeat right -22px; padding-right: 16px; height: 100%; } 
+
+.Body { background: url('images/body_left.png') repeat-y; padding-left: 6px; }
+	.Body .bodyContainer { background: url('images/body_right.png') repeat-y right top; padding-right: 6px; } 
+
+.Footer { background: url('images/footer.png') no-repeat; padding-left: 12px; height: 9px; }
+	.Footer .footerContainer { background: url('images/footer.png') no-repeat right -9px; padding-right: 12px; height: 100%;} 
+
+/* STYLE */
+
+.Header {  }
+	.Header .title {  color: #fff; text-align: center; padding-top: 7px; font-weight: bold; }
+
+.Body { }
+	.Body .bodyContainer { padding-top: 8px; padding-bottom: 5px; } 
+
+.Form { }
+	.Form form { margin: 0; } 
+	.Form fieldset { border: 0; padding: 0; clear: left; } 
+	.Form label { float: left; color: #fff; font-weight: bold; line-height: 22px; margin-right: 10px; width: 75px } 
+	.Form .TextBox { float: left; } 
+
+.TextBox { background: url('images/textbox.png') no-repeat; height: 27px; padding-left: 10px; }
+	.TextBox input { background: 0; border: 0; height: 100%; width: 100%; padding: 6px 0 0 0; color: #fff; } 
+	.TextBox div { background: url('images/textbox.png') no-repeat right top; height: 100%; padding-right: 10px; } 
+
+.Primary { }
+	.Primary .section { display: none; } 
+	.Primary .section:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+
+#TitleBar { }
+	#TitleBar .Help { display: block; height: 13px; width: 13px; float: right; background: url('images/help.png') no-repeat; margin-top: 6px; } 
+	#TitleBar .Close { display: block; height: 13px; width: 13px; float: left; background: url('images/close.png') no-repeat; margin-top: 6px; }
+
+.Content { margin: 5px 8px; color: #fff; display: none; }
+	.Content .subTitle { font-weight: bold; margin: 2px 0; } 
+	.Content .contentClose { float: right; font-size: 10px; color: #fff; margin-top: 3px; display: block; }
+	.Content .container { height: 150px; overflow-y: auto; overflow-x: hidden; }
+	.Content ul { margin: 5px 0; padding-left: 15px; } 
+		.Content ul li { margin: 2px 5px; } 
+	.Content .title { font-weight: bold; margin: 0 0 5px 0; padding-bottom: 2px; border-bottom: 1px solid #fff; } 
+
+
+/* MODULES */
+#Login { }
+	#Login fieldset { margin: 0 7px; clear: none;} 
+		#Login fieldset .Textbox { width: 143px; } 
+		#Login fieldset.password { float: right; } 
+		#Login fieldset.email { float: left; } 
+
+#Query { position: relative;}
+	#Query form { position: relative; } 
+	#Query .TextBox { width: 313px; margin: 0 4px;}
+
+#AutoComplete { position: absolute; width: 310px; margin: 0 4px; top: 22px; left: 7px; display: none; }
+	#AutoComplete .container { background: url('images/body_left.png') repeat-y; padding-left: 6px;}
+		#AutoComplete .container ul { background: url('images/body_right.png') repeat-y right top; padding-right: 6px; margin: 0; padding-top: 10px; list-style: none; padding-left: 0px;} 
+	#AutoComplete li { padding: 3px 10px; border: 1px solid #fff; border-width: 0; margin: 0; color: #fff; font-size: 11px; }
+		#AutoComplete li.alt { background: #404040; }
+		#AutoComplete li.selected { background: #fff; color: #000 }
+
+#Loader { background: url('images/ajax-loader.gif') no-repeat; float: right; height: 16px; width: 16px; margin-top: 6px; margin-right: 6px; }
+
+#Notification { background: #f4ffca; border: 1px solid #383a2e; margin: 0 0 5px 0; display: none; width: 320px; margin-left: 6px;}
+	#Notification .container { padding: 3px 5px; color: #000; font-size: 11px; font-weight: bold; } 
+
